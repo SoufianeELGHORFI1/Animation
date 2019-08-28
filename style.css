@@ -1,0 +1,50 @@
+body{
+    margin: 0%;
+    position: relative;
+    height: 100vh;
+    background-color: gray;
+    animation: color 2s infinite linear 
+}
+.kame{
+    position: absolute;
+    bottom: 420px;
+    left: 270px;
+    height: 10px;
+    z-index: 1;
+    animation: move 2s infinite ease-in;
+}
+.goku{
+    position: absolute;
+    bottom: 20px;
+}
+
+@keyframes move{
+    0%{
+        transform: scale(1)
+
+    }
+    75%{
+        bottom: 420px;
+        left: 270px;
+        transform: scale(12)
+    }
+    100%{
+        bottom: 75%;
+        left: 100%;
+        transform: scale(70)
+    }
+}
+@keyframes color {
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: black;
+    }
+    75%{
+        background-color: blue;
+    }
+    100%{
+        background-color: gray;
+    }
+}
